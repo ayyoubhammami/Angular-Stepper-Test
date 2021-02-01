@@ -1,0 +1,42 @@
+section{
+  background-color: white;
+  border-radius: 15px;
+
+}
+.divCard {
+  padding:4%;
+  min-width: 150px;
+  min-height: 110px;
+  border:1px solid #B6C5D5;
+  display: inline-block;
+  border-radius: 5%;
+  text-align: center;
+  font-size: 11px;
+  margin: 10px;
+  color: #5D5677;
+
+
+}
+#msj2{
+  margin-top: -15px;
+}
+#msj1{
+  margin-top: 20px;
+}
+#msj2For{
+  margin-top: -5px;
+  font-size: 11px;
+  text-align: center;
+}
+#msj1For{
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+
+}
+.divCard:hover {
+  box-shadow: 0 5px 8px rgba(33,33,33,.4);
+  cursor: pointer;
+  background-color: #5120FF;
+  color: white;
+}

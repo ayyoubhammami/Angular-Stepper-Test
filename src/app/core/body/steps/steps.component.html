@@ -1,0 +1,81 @@
+
+<div class="container">
+  <div class="row">
+    <div class=" col-lg-3 ">
+      <nav class="navbar " role="navigation">
+      <div class="navbar navbar-light navbar-expand-sm">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo04" aria-controls="navbarTogglerDemo04" aria-expanded="false" aria-label=" Toggle navigation">
+          <span class="navbar-toggler-icon"  ></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo04">
+          <mat-vertical-stepper #stepper>
+            <ng-template matStepperIcon="edit">
+              <mat-icon class="mat-icon material-icons ng-star-inserted">done</mat-icon>
+            </ng-template>
+            <mat-step >
+              <ng-template matStepLabel >
+                <p (click)="chnageComponent(0)"style="color: #3fb53f;font-size: 15px;margin-left: 15px;">Étape 1</p> <p style="font-size: 12px;font-weight: lighter;margin-top: -18px;">Commencer</p>
+              </ng-template>
+            </mat-step>
+
+            <mat-step >
+              <ng-template matStepLabel >
+                <p (click)="chnageComponent(1)" style="color: #3fb53f;font-size: 15px;margin-left: 10px;">Étape 2</p> <p style="font-size: 12px;font-weight: lighter;margin-top: -18px;">Description</p>
+              </ng-template>
+            </mat-step>
+
+            <mat-step >
+              <ng-template matStepLabel >
+                <p (click)="chnageComponent(2)" style="color: #3fb53f;font-size: 15px;margin-left: 10px;">Étape 3</p> <p style="font-size: 12px;font-weight: lighter;margin-top: -18px;margin-left: 22px;">Détails</p>
+              </ng-template>
+            </mat-step>
+
+            <mat-step >
+              <ng-template matStepLabel >
+                <p (click)="chnageComponent(3)" style="color: #3fb53f;font-size: 15px;margin-left: 10px;">Étape 4</p> <p style="font-size: 12px;font-weight: lighter;margin-top: -18px;">Parametre de </p><p style="font-size: 12px;font-weight: lighter;margin-top: -20px;margin-left: 38px;"> l'offre</p>
+              </ng-template>
+            </mat-step>
+
+            <mat-step >
+              <ng-template matStepLabel >
+                <p (click)="chnageComponent(4)" style="color: #3fb53f;font-size: 15px;margin-left: 10px;">Étape 5</p> <p style="font-size: 12px;font-weight: lighter;margin-top: -18px;margin-left: 15px;">Texte de </p><p style="font-size: 12px;font-weight: lighter;margin-top: -20px;margin-left: 8px;">Rédaction</p>
+              </ng-template>
+            </mat-step>
+
+            <mat-step >
+              <ng-template matStepLabel >
+                <p (click)="chnageComponent(5)" style="color: #3fb53f;font-size: 15px;margin-left: 10px;">Récap</p>
+              </ng-template>
+            </mat-step>
+
+          </mat-vertical-stepper>
+        </div>
+      </div>
+    </nav>
+    </div>
+    <div class="col-sm-9 col-md-9 col-lg-9 col-xs-9" style="margin-top: 15px;">
+      <div *ngIf="stepPositionActive==0">
+        <app-forms></app-forms>
+        <div style="float: right; margin: 20px;">
+          <button  type="button" style="border: 1px solid blue; color: blue;" class="btn btn-light">Annuler</button>
+          <button  (click)="onSave(stepper)" type="button" style="margin-left: 10px;" class="btn btn-primary">Suivant</button>
+        </div>
+      </div>
+      <div *ngIf="stepPositionActive==1">
+        <app-forms2></app-forms2>
+        <div style="float: right; margin: 20px;">
+          <button  type="button" style="border: 1px solid blue; color: blue;" class="btn btn-light">Annuler</button>
+          <button   (click)="onSave(stepper)" type="button" style="margin-left: 10px;" class="btn btn-primary">Suivant</button>
+        </div>
+      </div>
+      <div *ngIf="stepPositionActive==2">
+        <app-forms3></app-forms3>
+        <div style="float: right; margin: 20px;">
+          <button  type="button" style="border: 1px solid blue; color: blue;" class="btn btn-light">Annuler</button>
+          <button  (click)="onSave(stepper)" type="button" style="margin-left: 10px;" class="btn btn-primary">Suivant</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

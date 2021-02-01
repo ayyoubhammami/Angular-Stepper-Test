@@ -1,0 +1,7 @@
+// Include Bootstrap functions, variables, and mixins
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Import Bootstrap Steps custom SCSS
+@import "../scss/bootstrap-steps.scss";

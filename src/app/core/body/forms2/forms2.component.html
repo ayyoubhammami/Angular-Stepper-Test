@@ -1,0 +1,35 @@
+<section class="container p-4">
+  <div class="card ">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-sm-9">
+          <h4>Description</h4>
+          <p class="card-text" style="font-size: small;color: darkgray;">Étape 2 de 6</p>
+        </div>
+        <div class="col-sm-3">
+          <a href="void()"><p style="float: right;color: royalblue;margin-top: 15px;">Enregistré</p> </a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body" style="margin-bottom: 40px;">
+      <p class="card-title">Une bonne description contient:</p>
+      <ul>
+        <li>Quel est le livrable</li>
+        <li>Type de rédacteur que vous recherchez</li>
+        <li>Tout ce qui est unique sur e projet, l'equipe ou votre entreprise</li>
+      </ul>
+      <textarea class="form-control" rows="5" placeholder="Role" [(ngModel)]="role" [maxlength]="maxChars" [minlength]="minChars"> Rédaction d'article de blog sur la réalité virtuelle</textarea>
+
+      <label class="nopadding clrlbl " style="float: right;"> <small>{{role.length}}/400 characters (minimum 40)</small></label>
+      <br>
+      <br>
+      <p class="card-title">Site web souhaité ajouter</p>
+      <select class="form-control">
+        <option>Sélectionner un site web</option>
+      </select>
+    </div>
+  </div>
+
+
+</section>
+

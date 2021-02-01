@@ -1,0 +1,47 @@
+::ng-deep .mat-vertical-stepper-header {
+  flex-direction: row-reverse!important;
+  height: auto;
+
+}
+::ng-deep .mat-vertical-stepper-header .mat-step-label {
+  padding: 15px 0px 0px  0px !important;
+}
+
+
+
+
+@media only screen and (min-width: 600px) { ::ng-deep  .mat-vertical-content-container {
+  margin-left: 137px !important;
+} }
+
+@media only screen and (max-width: 600px) { ::ng-deep  .mat-vertical-content-container {
+  margin-left: 312px !important;
+} }
+
+@media only screen and (max-width: 375px) { ::ng-deep  .mat-vertical-content-container {
+  margin-left: 205px !important;
+} }
+
+@media only screen and (min-width: 411px) { ::ng-deep  .mat-vertical-content-container {
+  margin-left: 240px !important;
+} }
+
+
+@media only screen and (min-width: 900px) { ::ng-deep  .mat-vertical-content-container {
+  margin-left: 137px !important;
+} }
+
+
+
+::ng-deep .mat-step-label {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 100px !important;
+  vertical-align: middle;
+}
+
+::ng-deep .mat-vertical-stepper-header .mat-step-icon {
+  margin-right: 40px !important;
+}

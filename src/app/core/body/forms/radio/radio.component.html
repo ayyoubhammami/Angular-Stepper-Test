@@ -1,0 +1,15 @@
+
+<div class="example-radio-group" *ngFor="let option of options" >
+  <label class="example-selected-value" [for]='option'>
+
+    <input class="example-radio-button"  type="radio" [id]="option" name="option" >
+    {{option}}
+  </label>
+  <div *ngIf="condition">Content to render when condition is true
+  <label class="example-selected-value" [for]='option'>
+
+    <input class="example-radio-button"  type="radio" [id]="option" name="option" >
+    {{option}}
+  </label>
+  </div>
+</div>

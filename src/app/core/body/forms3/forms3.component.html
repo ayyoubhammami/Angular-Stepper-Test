@@ -1,0 +1,40 @@
+<section class="container p-4">
+  <div class="card ">
+    <div class="card-header">
+      <div class="row">
+        <div class="col-sm-9">
+          <h4>Détails</h4>
+          <p class="card-text" style="font-size: small;color: darkgray;">Étape 3 de 6</p>
+        </div>
+        <div class="col-sm-3">
+         <a href="void()"> <p style="float: right;color: royalblue;margin-top: 15px;">Enregistré</p></a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body" >
+      <p class="card-title">nembre de rédacteurs souhaités pour votre article</p>
+      <div class="row">
+        <div *ngFor="let card of cards">
+          <div class="divCard col-sm-2 " clickColor >
+            <i id="msj1" class="{{card.icon}}" aria-hidden="true"></i>
+            <p >{{card.msj1}}</p>
+            <p id="msj2">{{card.msj2}}</p>
+          </div>
+        </div>
+     </div>
+     <br>
+      <p class="card-title">Niveau d'expertise</p>
+      <div class="row">
+        <div *ngFor="let card of cardsFor">
+          <div class=" " style="width: 190px;margin: 0px;">
+            <i class="{{card.icon}}" aria-hidden="true"></i>
+            <div class="divCard " clickColor  >
+              <p id='msj1For'>{{card.msj1}}</p>
+              <p id="msj2For">{{card.msj2}}</p>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+  </div>
+</section>
